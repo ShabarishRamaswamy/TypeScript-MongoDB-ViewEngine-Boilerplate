@@ -1,34 +1,37 @@
 {
-  "name": "TypeScript-MongoDB-ViewEngine-Boilerplate",
-  "version": "1.0.0",
-  "description": "A Repo for the boilerplate code needed to start a new TypeScript, MongoDB and View engine project.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node build/app.js",
-    "dev": "nodemon src/app.ts -e ts,hbs,tsx",
-    "build": "tsc -p ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ShabarishRamaswamy/TypeScript-MongoDB-ViewEngine-Boilerplate.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ShabarishRamaswamy/TypeScript-MongoDB-ViewEngine-Boilerplate/issues"
-  },
-  "homepage": "https://github.com/ShabarishRamaswamy/TypeScript-MongoDB-ViewEngine-Boilerplate#readme",
-  "dependencies": {
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.13.2"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^16.3.1",
-    "nodemon": "^2.0.12",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
-  }
+    "name": "TypeScript-MongoDB-ViewEngine-Boilerplate",
+    "version": "1.0.0",
+    "description": "A Repo for the boilerplate code needed to start a new TypeScript, MongoDB and View engine project.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node build/app.js",
+        "build": "tsc -p .",
+        "compile": "tsc",
+        "dev": "nodemon -e js,html,ejs,ts src/app.ts && npm run compile && npm run serve",
+        "serve": "node build/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ShabarishRamaswamy/TypeScript-MongoDB-ViewEngine-Boilerplate.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ShabarishRamaswamy/TypeScript-MongoDB-ViewEngine-Boilerplate/issues"
+    },
+    "homepage": "https://github.com/ShabarishRamaswamy/TypeScript-MongoDB-ViewEngine-Boilerplate#readme",
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "mongoose": "^5.13.2"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.13",
+        "@types/node": "^16.3.1",
+        "nodemon": "^2.0.12",
+        "ts-node": "^10.1.0",
+        "typescript": "^4.3.5"
+    }
 }
